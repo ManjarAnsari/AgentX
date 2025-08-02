@@ -1,4 +1,3 @@
-
 import streamlit as st
 from google_sheet import get_sheet_data
 import google.generativeai as genai
@@ -7,9 +6,9 @@ st.set_page_config(page_title="AI Workflow Agent", page_icon="🤖", layout="wid
 st.title("Smart Workflow Agent 🤖")
 st.write("Ask me anything. This app integrates Gemini, Google Sheets, SerpAPI, and memory.")
 
-API_KEY = st.secrets["GEMINI_API_KEY"]
+API_KEY = st.secrets["AIzaSyC0PhPArweMWjXCsfQcfnIU0saJx4BKYfU"]
 genai.configure(api_key=API_KEY)
-model = genai.GenerativeModel("gemini-pro")
+model = genai.GenerativeModel("gemini-2.0-flash")
 
 if "chat" not in st.session_state:
     st.session_state.chat = []
