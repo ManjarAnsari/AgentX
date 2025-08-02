@@ -6,7 +6,7 @@ st.set_page_config(page_title="AI Workflow Agent", page_icon="🤖", layout="wid
 st.title("Smart Workflow Agent 🤖")
 st.write("Ask me anything. This app integrates Gemini, Google Sheets, SerpAPI, and memory.")
 
-API_KEY = st.secrets["AIzaSyC0PhPArweMWjXCsfQcfnIU0saJx4BKYfU"]
+API_KEY = st.secrets["GEMINI_API_KEY"]
 genai.configure(api_key=API_KEY)
 model = genai.GenerativeModel("gemini-2.0-flash")
 
