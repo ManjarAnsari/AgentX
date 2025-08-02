@@ -1,6 +1,6 @@
 
 import streamlit as st
-from edvoy_tools.google_sheet import get_sheet_data
+from google_sheet import get_sheet_data
 import google.generativeai as genai
 
 st.set_page_config(page_title="AI Workflow Agent", page_icon="🤖", layout="wide")
