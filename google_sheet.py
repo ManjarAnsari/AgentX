@@ -7,4 +7,4 @@ def get_sheet_data():
         df = pd.read_csv(url)
         return df.to_string(index=False)
     except:
-        return "Google Sheet data not available."
+        return ""
