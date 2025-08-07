@@ -3,7 +3,7 @@ from google_sheet import get_sheet_data
 import google.generativeai as genai
 
 st.set_page_config(page_title="AI Agent", page_icon="🤖", layout="wide")
-st.title("Smart Workflow Agent 🤖")
+st.title("AI Agent 🤖")
 st.write("Ask me anything. Built By Manzar🤖.")
 
 API_KEY = st.secrets["GEMINI_API_KEY"]
