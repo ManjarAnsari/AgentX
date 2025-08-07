@@ -2,9 +2,9 @@ import streamlit as st
 from google_sheet import get_sheet_data
 import google.generativeai as genai
 
-st.set_page_config(page_title="AI Workflow Agent", page_icon="🤖", layout="wide")
+st.set_page_config(page_title="AI Agent", page_icon="🤖", layout="wide")
 st.title("Smart Workflow Agent 🤖")
-st.write("Ask me anything. This app integrates Gemini, Google Sheets, SerpAPI, and memory.")
+st.write("Ask me anything. Built By Manzar🤖.")
 
 API_KEY = st.secrets["GEMINI_API_KEY"]
 genai.configure(api_key=API_KEY)
