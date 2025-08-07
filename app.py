@@ -13,7 +13,7 @@ model = genai.GenerativeModel("gemini-2.0-flash")
 if "chat" not in st.session_state:
     st.session_state.chat = []
 
-prompt = st.chat_input("Ask your question here...")
+prompt = st.chat_input("👋 Hi, I'm Manzar!")
 if prompt:
     st.session_state.chat.append({"role": "user", "content": prompt})
     sheet_data = get_sheet_data()
